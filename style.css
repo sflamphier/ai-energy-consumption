@@ -133,3 +133,13 @@ footer {
   border-radius: 8px;
   overflow: hidden;
 }
+
+.viz-wrapper {
+  max-width: 800px; /* Set the maximum width for the visualizations */
+  margin: 0 auto 20px; /* Center the visualizations and add spacing */
+}
+
+tableau-viz {
+  width: 100%; /* Make the visualization responsive */
+  height: 400px; /* Adjust the height as needed */
+}

@@ -70,6 +70,11 @@
     </div>
   </section>
 
+  <!-- Import tableau script -->
+  <script type="module"
+  src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+  </script>
+
     <!-- Section 1: What is AI and how does it use energy? -->
     <section id="energy-use" class="py-5 bg-light text-center">
       <div class="container">
@@ -187,22 +192,23 @@
   <section id="model-energy" class="py-5 bg-white text-center">
     <div class="container">
       <h2 class="fw-bold">How Much Energy Do These Models Consume?</h2>
-      <div class="viz-placeholder">[Tableau Visualization #5: Queries per model daily]</div>
-      <div id="tableauViz"></div>
-      <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-      <script type="text/javascript">
-        var vizDiv = document.getElementById('tableauViz');
-        var vizURL = 'https://public.tableau.com/views/247FinalDataSetAIModels/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link';
-        var options = {
-          width: '100%',
-          height: '600px',
-          hideTabs: true,
-          hideToolbar: true
-        };
-        var viz = new tableau.Viz(vizDiv, vizURL, options);
-      </script>      
-      <div class="viz-placeholder">[Tableau Visualization #7: Training cost for each model]</div>
-      <div class="viz-placeholder">[Tableau Visualization #8: Company environmental load → CO2]</div>
+      <div class="viz-wrapper">
+        <tableau-viz id="tableauViz1"       
+          src="https://public.tableau.com/views/247FinalDataSetAIModels/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+        </tableau-viz>
+      </div>    
+      <div class="viz-placeholder">[Tableau Visualization #6: Energy consumption per model]</div>
+      <div class="viz-wrapper">
+        <tableau-viz id="tableauViz2"       
+          src="https://public.tableau.com/views/247FinalDataSetAIModels-training/Sheet3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+        </tableau-viz>
+      </div>      
+      <div class="viz-wrapper">
+        <tableau-viz id="tableauViz2"       
+          src="https://public.tableau.com/views/247FinalDataSetAIModels-CO2/Sheet2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+        </tableau-viz>
+      </div>
+      <p>Note: The above iframe is a placeholder for the Tableau visualization. Replace the src attribute with the actual Tableau URL.</p>
     </div>
   </section>
 
