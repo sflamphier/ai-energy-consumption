@@ -19,11 +19,6 @@
     <div class="lightning-bolt"></div>
     <div class="lightning-bolt"></div>
     <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
 
     <!-- Hero Content -->
     <img src="bear_wave.png" alt="Hero Image" class="mb-4" style="width: 200px; height: auto;">
@@ -35,25 +30,173 @@
   <!-- Overview Section -->
   <section id="overview" class="py-5 bg-white text-center">
     <div class="container">
-      <h2 class="mb-4 fw-bold">Project Overview</h2>
+      <h2 class="mb-4 fw-bold">Introduction</h2>
       <div class="row align-items-center">
-        <!-- Text Block -->
+
         <div class="col-md-6">
           <div class="ice-cube mb-4">
             <p>AI has become an everyday assistant, helping with everything from planning travel and generating images to debugging code, writing emails, and even offering therapeutic support. While these large language models (LLMs) are helpful, their utility comes at a surprising environmental cost.</p>
           </div>
           <div class="ice-cube mb-4">
-            <p>A single query to a popular AI chatbot consumes as much electricity as leaving a lightbulb on for 20 minutes—over ten times the energy required for a typical Google search. Remember the old warning about leaving the fridge door open and “killing the polar bears”? That may have been an exaggeration, but in today’s AI-driven world, the environmental impact feels far more tangible.</p>
+            <p>A single query to a popular AI chatbot consumes as much electricity as leaving a lightbulb on for 20 minutes—over ten times the energy required for a typical Google search.</p>
+            <p>Remember the old warning about leaving the fridge door open and “killing the polar bears”? That may have been an exaggeration, but in today’s AI-driven world, the environmental impact feels far more tangible.</p>
           </div>
           <div class="ice-cube">
             <p>This project explores the hidden cost of AI: its energy consumption. It investigates the electricity demands of training AI models, running everyday queries, and maintaining the massive data centers that keep these tools running.</p>
           </div>
         </div>
-        <!-- Image Block -->
+
         <div class="col-md-6">
           <img src="bear_talk.png" alt="Project Overview Image" class="img-fluid" style="width: 150px; height: auto;">
         </div>
       </div>
+    </div>
+  </section>
+
+    <!-- Section 1: What is AI and how does it use energy? -->
+    <section id="energy-use" class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="fw-bold">What is AI and How Does it Use Energy?</h2>
+        <p>As you read above, AI costs a lot—but what do all those MegaWatt Hour (MWh) numbers translate to?</p>
+        <div class="viz-placeholder">[Tableau Visualization #1: Daily consumption equivalents (lightbulb, netflix, etc)]</div>
+        <div class="viz-placeholder">[Tableau Visualization #2: Comparing AI to Google search energy per query]</div>
+        <p>Yes, different query types vary significantly in energy use depending on their complexity, token length, and compute requirements (e.g., context window size, model architecture, inference depth).</p>
+      </div>
+    </section>
+
+
+  <!-- Section 2: Query Complexity Impact -->
+  <section id="query-complexity" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="fw-bold">Do Different Types of Queries Use Different Amounts of Energy?</h2>
+      <div class="viz-placeholder">[Tableau Visualization #3: Interactive query complexity comparison]</div>
+    </div>
+  </section>
+
+  <!-- Section 3: LLMs Overview -->
+  <section id="llms" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold">What LLMs Are Out There?</h2>
+      <!-- Key Insights Section -->
+      <p>Explore top models from OpenAI, Google, Anthropic, Meta, Mistral, and Cohere—usage stats, queries/day, and total energy use.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">GPT-4o</h5>
+                <h6 class="card-title">Open AI</h6>
+                <p class="card-text">Explore the steps from user query to power consumption.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Gemini</h5>
+                <h6 class="card-title">Google</h6>
+                <p class="card-text">See how model scale correlates with electricity needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">LLama</h5>
+                <h6 class="card-title">Meta</h6>
+                <p class="card-text">Examine the server & datacenter resources used.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Claude</h5>
+                <h6 class="card-title">Anthropic</h6>
+                <p class="card-text">Measure environmental impact and emissions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p></p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">R1</h5>
+                <h6 class="card-title">DeepSeek</h6>
+                <p class="card-text">Explore the steps from user query to power consumption.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Nova</h5>
+                <h6 class="card-title">Amazon</h6>
+                <p class="card-text">See how model scale correlates with electricity needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Large 2</h5>
+                <h6 class="card-title">Mistral AI</h6>
+                <p class="card-text">Examine the server & datacenter resources used.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Carbon Footprint</h5>
+                <p class="card-text">Measure environmental impact and emissions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="viz-placeholder">[Tableau Visualization #4: Radar plot of LLM companies]</div>
+    </div>
+  </section>
+
+  <!-- Section 4: Model Energy Use -->
+  <section id="model-energy" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="fw-bold">How Much Energy Do These Models Consume?</h2>
+      <div class="viz-placeholder">[Tableau Visualization #5: Queries per model daily]</div>
+      <div class="viz-placeholder">[Tableau Visualization #6: Energy used daily by model weighted by DAUs]</div>
+      <div class="viz-placeholder">[Tableau Visualization #7: Training cost for each model]</div>
+      <div class="viz-placeholder">[Tableau Visualization #8: Company environmental load → CO2]</div>
+    </div>
+  </section>
+
+  <!-- Section 5: Energy Timeline -->
+  <section id="timeline" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold">Timeline of Energy Consumption</h2>
+      <div class="viz-placeholder">[Tableau Visualization #9: 2024 Energy Timeline]</div>
+      <div class="viz-placeholder">[Tableau Visualization #10: Highest AI in Energy Overtime]</div>
+    </div>
+  </section>
+
+  <!-- Section 6: How Can You Help? -->
+  <section id="take-action" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="fw-bold">How Can You Help?</h2>
+      <div class="viz-placeholder">[Tableau Visualization #11: User Actions]</div>
+    </div>
+  </section>
+
+  <!-- Section 7: Conclusion -->
+  <section id="conclusion" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold">Conclusion</h2>
+      <p>AI is here to stay—but how do we ensure we have the resources to sustain this growth without devastating environmental consequences? And how do we save the polar bears?</p>
+      <div class="viz-placeholder">[Tableau Visualization #12: Annual consumption equivalents]</div>
     </div>
   </section>
 
@@ -143,8 +286,7 @@
   <footer class="text-white text-center py-4">
     <p>Join the Conversation: Share your ideas, collaborate, or contribute to open data efforts.</p>
     <a href="#" class="btn btn-outline-light">Join Slack</a>
-    <a href="#" class="btn btn-outline-light">Submit a Viz</a>
-    <p class="mt-3 small">&copy; 2025 Sophia Lamphier · AI Energy Consumption</p>
+    <p class="mt-3 small">&copy; INFO Viz 2025 Sophia Lamphier & Kenny Ly· AI Energy Consumption</p>
   </footer>
 </body>
 </html>
