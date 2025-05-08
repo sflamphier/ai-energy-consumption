@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to bottom right, #6fb1fc, #4364f7);
+  padding: 3rem 1rem;
+}
+
+.hero h1, .hero p {
+  color: white;
+}
+
+.viz-placeholder {
+  height: 400px;
+  background-color: #e9ecef;
+  border: 2px dashed #adb5bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+footer {
+  background: linear-gradient(to right, #6fb1fc, #4364f7);
+}
