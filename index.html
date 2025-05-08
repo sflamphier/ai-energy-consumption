@@ -12,40 +12,57 @@
 
 <body>
   <!-- Hero Section -->
-  <section class="hero text-center text-white d-flex flex-column justify-content-center align-items-center position-relative">
-    <!-- Lightning Bolts -->
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
-    <div class="lightning-bolt"></div>
+  <section class="hero position-relative d-flex flex-column justify-content-center align-items-center text-center">
 
-    <!-- Hero Content -->
-    <img src="bear_wave.png" alt="Hero Image" class="mb-4" style="width: 200px; height: auto;">
-    <h1 class="display-4 fw-bold">How Much Does a Question Cost? The Energy Consumption of AI</h1>
-    <p class="lead">This site explores the energy cost of AI models—from queries to training—across real-world scenarios.</p>
-    <a href="#overview" class="btn btn-light btn-lg mt-3">Explore the Data</a>
+    <!-- Background Lightning -->
+    <div class="lightning-container">
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+      <div class="lightning-bolt"></div>
+    </div>
+
+    <!-- Foreground Hero Content -->
+    <div class="hero-content text-white text-center">
+      <img src="bear_wave.png" alt="Hero Image" class="mb-4" style="width: 200px; height: auto;">
+      <h1 class="display-4 fw-bold">How Much Does a Question Cost? The Energy Consumption of AI</h1>
+      <p class="lead">This site explores the energy cost of AI models—from queries to training—across real-world scenarios.</p>
+      <a href="#overview" class="btn btn-light btn-lg mt-3">Explore the Data</a>
+    </div>
+
   </section>
+</body>
 
   <!-- Overview Section -->
   <section id="overview" class="py-5 bg-white text-center">
     <div class="container">
       <h2 class="mb-4 fw-bold">Introduction</h2>
-      <div class="row align-items-center">
-
-        <div class="col-md-6">
+      <div class="row justify-content-center">
+        <!-- Horizontal Ice Cubes -->
+        <div class="col-md-4">
           <div class="ice-cube mb-4">
             <p>AI has become an everyday assistant, helping with everything from planning travel and generating images to debugging code, writing emails, and even offering therapeutic support. While these large language models (LLMs) are helpful, their utility comes at a surprising environmental cost.</p>
           </div>
+        </div>
+        <div class="col-md-4">
           <div class="ice-cube mb-4">
-            <p>A single query to a popular AI chatbot consumes as much electricity as leaving a lightbulb on for 20 minutes—over ten times the energy required for a typical Google search.</p>
-            <p>Remember the old warning about leaving the fridge door open and “killing the polar bears”? That may have been an exaggeration, but in today’s AI-driven world, the environmental impact feels far more tangible.</p>
+            <p>A single query to a popular AI chatbot consumes as much electricity as leaving a lightbulb on for 20 minutes—over ten times the energy required for a typical Google search. Remember the old warning about leaving the fridge door open and “killing the polar bears”? That may have been an exaggeration, but in today’s AI-driven world, the environmental impact feels far more tangible.</p>
           </div>
-          <div class="ice-cube">
+        </div>
+        <div class="col-md-4">
+          <div class="ice-cube mb-4">
             <p>This project explores the hidden cost of AI: its energy consumption. It investigates the electricity demands of training AI models, running everyday queries, and maintaining the massive data centers that keep these tools running.</p>
           </div>
         </div>
-
+      </div>
+      <!-- Bear Image Underneath -->
+      <div class="row justify-content-center mt-4">
         <div class="col-md-6">
           <img src="bear_talk.png" alt="Project Overview Image" class="img-fluid" style="width: 150px; height: auto;">
         </div>
@@ -84,6 +101,7 @@
           <div class="col-md-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <img src="anthropic_logo.png" alt="Anthropic Logo" class="card-logo">
                 <h5 class="card-title">GPT-4o</h5>
                 <h6 class="card-title">Open AI</h6>
                 <p class="card-text">Explore the steps from user query to power consumption.</p>
@@ -93,6 +111,7 @@
           <div class="col-md-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <img src="gemini_logo.png" alt="Google Logo" class="card-logo">
                 <h5 class="card-title">Gemini</h5>
                 <h6 class="card-title">Google</h6>
                 <p class="card-text">See how model scale correlates with electricity needs.</p>
@@ -102,6 +121,7 @@
           <div class="col-md-3">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
+                <img src="meta_logo.png" alt="Meta Logo" class="card-logo">
                 <h5 class="card-title">LLama</h5>
                 <h6 class="card-title">Meta</h6>
                 <p class="card-text">Examine the server & datacenter resources used.</p>

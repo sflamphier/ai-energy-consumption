@@ -34,53 +34,76 @@ footer {
   background: linear-gradient(to right, #6fb1fc, #4364f7);
 }
 
+.lightning-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* lets clicks pass through */
+  z-index: 0;
+}
+
+.hero > *:not(.lightning-container) {
+  z-index: 1;
+  position: relative;
+}
+
 .lightning-bolt {
   position: absolute;
-  bottom: -50px; /* Start below the hero section */
-  width: 10px;
-  height: 30px;
-  background: lightblue;
-  clip-path: polygon(50% 0%, 60% 30%, 40% 30%, 50% 60%, 40% 60%, 50% 100%, 30% 70%, 50% 70%, 40% 40%);
-  animation: move-up 3s infinite ease-in-out;
-  opacity: 0.8;
+  width: 20px;
+  height: 60px;
+  background: gold;
+  clip-path: polygon(
+    40% 0%, 
+    60% 0%, 
+    50% 40%, 
+    70% 40%, 
+    30% 100%, 
+    40% 60%, 
+    20% 60%
+  );
+  animation: fall 2s linear infinite;
+  opacity: 0.9;
+  transform: rotate(0deg);
+}
+.lightning-bolt {
+  filter: drop-shadow(0 0 5px yellow) drop-shadow(0 0 10px gold);
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
-/* Randomize positions for multiple bolts */
-.lightning-bolt:nth-child(1) {
-  left: 20%;
-  animation-delay: 0s;
-}
-.lightning-bolt:nth-child(2) {
-  left: 40%;
-  animation-delay: 0.5s;
-}
-.lightning-bolt:nth-child(3) {
-  left: 60%;
-  animation-delay: 1s;
-}
-.lightning-bolt:nth-child(4) {
-  left: 80%;
-  animation-delay: 1.5s;
-}
-.lightning-bolt:nth-child(5) {
-  left: 50%;
-  animation-delay: 2s;
+.lightning-bolt {
+  animation: fall 2s linear infinite, flicker 0.3s infinite alternate;
 }
 
-/* Animation for moving upwards */
-@keyframes move-up {
+/* Position each bolt differently */
+.lightning-bolt:nth-child(1) { top: -50px; left: 10%; animation-delay: 0s; }
+.lightning-bolt:nth-child(2) { top: -50px; left: 20%; animation-delay: 0.4s; }
+.lightning-bolt:nth-child(3) { top: -50px; left: 30%; animation-delay: 0.8s; }
+.lightning-bolt:nth-child(4) { top: -50px; left: 40%; animation-delay: 1.2s; }
+.lightning-bolt:nth-child(5) { top: -50px; left: 50%; animation-delay: 1.6s; }
+.lightning-bolt:nth-child(6) { top: -50px; left: 60%; animation-delay: 2.0s; }
+.lightning-bolt:nth-child(7) { top: -50px; left: 70%; animation-delay: 2.4s; }
+.lightning-bolt:nth-child(8) { top: -50px; left: 80%; animation-delay: 2.8s; }
+.lightning-bolt:nth-child(9) { top: -50px; left: 90%; animation-delay: 3.2s; }
+.lightning-bolt:nth-child(10) { top: -50px; left: 95%; animation-delay: 3.6s; }
+
+/* Animation */
+@keyframes fall {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(25deg);
     opacity: 0.8;
   }
-  50% {
-    opacity: 1;
-  }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(100vh) rotate(25deg);
     opacity: 0;
   }
 }
+
+
 
 .ice-cube {
   background: rgba(173, 216, 230, 0.6); /* Light blue with transparency */
@@ -95,4 +118,11 @@ footer {
 
 .ice-cube:hover {
   transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card-logo {
+  display: block;
+  margin: 0 auto 10px; /* Center the logo and add spacing below */
+  width: 40px; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
 }

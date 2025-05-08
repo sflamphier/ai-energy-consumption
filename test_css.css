@@ -42,3 +42,78 @@ body {
   .invisible {
     display: none;
   }
+  .lightning-bolt {
+    position: absolute;
+    bottom: -50px; /* Start below the hero section */
+    width: 10px;
+    height: 30px;
+    background: lightblue;
+    clip-path: polygon(50% 0%, 60% 30%, 40% 30%, 50% 60%, 40% 60%, 50% 100%, 30% 70%, 50% 70%, 40% 40%);
+    animation: move-up 3s infinite ease-in-out;
+    opacity: 0.8;
+  }
+
+
+.lightning-bolt {
+  width: 5px;
+  height: 40px;
+  background: #fff;
+  transform: rotate(20deg);
+}
+
+/* Randomize positions for multiple bolts */
+.lightning-bolt:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+.lightning-bolt:nth-child(2) {
+  left: 40%;
+  animation-delay: 0.5s;
+}
+.lightning-bolt:nth-child(3) {
+  left: 60%;
+  animation-delay: 1s;
+}
+.lightning-bolt:nth-child(4) {
+  left: 80%;
+  animation-delay: 1.5s;
+}
+.lightning-bolt:nth-child(5) {
+  left: 50%;
+  animation-delay: 2s;
+}
+.lightning-bolt:nth-child(6) {
+  left: 10%;
+  animation-delay: 0.7s;
+}
+.lightning-bolt:nth-child(7) {
+  left: 30%;
+  animation-delay: 1.2s;
+}
+.lightning-bolt:nth-child(8) {
+  left: 70%;
+  animation-delay: 1.8s;
+}
+.lightning-bolt:nth-child(9) {
+  left: 85%;
+  animation-delay: 2.3s;
+}
+.lightning-bolt:nth-child(10) {
+  left: 95%;
+  animation-delay: 2.8s;
+}
+
+/* Animation for moving upwards */
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
