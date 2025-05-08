@@ -1,0 +1,3 @@
+[submodule "AIEnergyInsightsNew"]
+	path = AIEnergyInsightsNew
+	url = https://github.com/sflamphier/ai-energy-consumption.git
