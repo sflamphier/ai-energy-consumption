@@ -1,44 +1,57 @@
+/* Typography */
 body {
-  background-color: aliceblue;
-  font-size: 100%;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #212529;
+  background-color: #f8f9fa;
 }
 
-.header {
-  padding: 5em 3em;
-  margin-bottom: 3em;
-  text-align: left;
-  font-family: Roboto Slab;
-  background: #add9ff;
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
-/* add on to existing bootstrap CSS styling */
-.container {
-  margin-top: 2em;
-  margin-bottom: 4em;
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
-/* override an existing class' styling only inside a specific div specified with div id */
-#bootstrap-basics .row {
-  margin-bottom: 0.5em;
+/* Visualization placeholders */
+.viz-placeholder {
+  background-color: #e9ecef;
+  border: 2px dashed #adb5bd;
+  height: 400px;
+  color: #495057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 1rem;
+  border-radius: 8px;
 }
 
-#bootstrap-basics .showBackground {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  background-color: rgba(198, 180, 255, 0.3);
-  border: 2px solid rgba(198, 180, 255, 0.5);
-  font-family: monospace;
+/* Section spacing */
+.section {
+  margin-bottom: 4rem;
 }
 
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #203f6d;
-  --bs-btn-border-color: #13233a;
-  --bs-btn-hover-color: rgb(255, 255, 255);
-  --bs-btn-hover-bg: #135fd1;
+/* Footer */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+  font-size: 0.9rem;
 }
 
-.invisible {
-  display: none;
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .viz-placeholder {
+    height: 300px;
+    font-size: 0.95rem;
+  }
 }
