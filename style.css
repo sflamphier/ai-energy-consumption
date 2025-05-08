@@ -81,3 +81,18 @@ footer {
     opacity: 0;
   }
 }
+
+.ice-cube {
+  background: rgba(173, 216, 230, 0.6); /* Light blue with transparency */
+  border: 2px solid rgba(173, 216, 230, 0.8); /* Slightly darker border */
+  border-radius: 15px; /* Rounded corners for the "ice cube" effect */
+  padding: 20px; /* Space inside the bubble */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.ice-cube:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
