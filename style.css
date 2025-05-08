@@ -126,3 +126,10 @@ footer {
   width: 40px; /* Adjust the size of the logo */
   height: auto; /* Maintain aspect ratio */
 }
+
+.tableau-embed {
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
