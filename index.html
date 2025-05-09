@@ -31,9 +31,10 @@
     <!-- Foreground Hero Content -->
     <div class="hero-content text-white text-center">
       <img src="bear_wave.png" alt="Hero Image" class="mb-4" style="width: 200px; height: auto;">
-      <h1 class="display-4 fw-bold">How Much Does a Question Cost? The Energy Consumption of AI</h1>
-      <p class="lead">This site explores the energy cost of AI models—from queries to training—across real-world scenarios.</p>
-      <a href="#overview" class="btn btn-light btn-lg mt-3">Explore the Data</a>
+      <h1 class="display-4 fw-bold">How Much Does A Question Cost?</h1>
+      <h1 class="display-5 fw-bold">The Energy Consumption of AI</h1>
+      <p class="lead">This project explores the energy cost of AI models from queries to training</p>
+      <a href="#overview" class="btn btn-light btn-lg mt-3">See the Data</a>
     </div>
 
   </section>
@@ -124,10 +125,49 @@
 
 
   <!-- Section 2: Query Complexity Impact -->
-  <section id="query-complexity" class="py-5 bg-white text-center">
+  <section id="query-tabs" class="py-5 text-center bg-white">
     <div class="container">
-      <h2 class="fw-bold">Do Different Types of Queries Use Different Amounts of Energy?</h2>
-      <div class="viz-placeholder">[Tableau Visualization #3: Interactive query complexity comparison]</div>
+      <h2 class="fw-bold mb-4">How Much Energy Do Different Queries Use?</h2>
+  
+      <!-- Tab Buttons -->
+      <ul class="nav nav-tabs justify-content-center mb-4" id="queryTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Simple Definition</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Reading + PDF</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">Code Gen/Debug</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">Complex Reasoning</button>
+        </li>
+      </ul>
+  
+      <!-- Tab Content -->
+      <div class="tab-content" id="queryTabContent">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+          <h4 class="fw-bold">Simple Definition</h4>
+          <p><strong>Energy:</strong> 0.01–0.03 Wh/query</p>
+          <p><em>~same as 1–2 seconds of LED bulb use</em></p>
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel">
+          <h4 class="fw-bold">Reading + Answering PDF</h4>
+          <p><strong>Energy:</strong> 0.2–1.0 Wh/query</p>
+          <p><em>~same as charging a smartphone for 5 minutes</em></p>
+        </div>
+        <div class="tab-pane fade" id="tab3" role="tabpanel">
+          <h4 class="fw-bold">Code Generation or Debugging</h4>
+          <p><strong>Energy:</strong> 0.3–1.5 Wh/query</p>
+          <p><em>~same as boiling water for a cup of tea</em></p>
+        </div>
+        <div class="tab-pane fade" id="tab4" role="tabpanel">
+          <h4 class="fw-bold">Complex Multi-Part Reasoning</h4>
+          <p><strong>Energy:</strong> 0.5–2.0 Wh/query</p>
+          <p><em>~same as using a laptop for 10–20 minutes</em></p>
+        </div>
+      </div>
     </div>
   </section>
 
