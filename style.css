@@ -84,7 +84,7 @@ footer {
 .lightning-bolt:nth-child(2) { top: -50px; left: 20%; animation-delay: 0.4s; }
 .lightning-bolt:nth-child(3) { top: -50px; left: 30%; animation-delay: 0.8s; }
 .lightning-bolt:nth-child(4) { top: -50px; left: 40%; animation-delay: 1.2s; }
-.lightning-bolt:nth-child(5) { top: -50px; left: 50%; animation-delay: 1.6s; }
+lightning-bolt:nth-child(5) { top: -50px; left: 50%; animation-delay: 1.6s; }
 .lightning-bolt:nth-child(6) { top: -50px; left: 60%; animation-delay: 2.0s; }
 .lightning-bolt:nth-child(7) { top: -50px; left: 70%; animation-delay: 2.4s; }
 .lightning-bolt:nth-child(8) { top: -50px; left: 80%; animation-delay: 2.8s; }
@@ -142,4 +142,19 @@ footer {
 tableau-viz {
   width: 100%; /* Make the visualization responsive */
   height: 400px; /* Adjust the height as needed */
+}
+
+.tableau-wrapper {
+  margin-bottom: 30px; /* Add spacing below the Tableau visualization */
+  overflow: hidden; /* Prevent overflow issues */
+  border-radius: 8px; /* Add rounded corners for a cleaner look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+#timeline {
+  padding-bottom: 50px; /* Add extra padding to the section */
+}
+
+#co2-emissions {
+  padding-bottom: 50px; /* Add extra padding to the section */
 }

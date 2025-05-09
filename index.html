@@ -80,6 +80,8 @@
     <section id="energy-use" class="py-5 bg-light text-center">
       <div class="container">
         <h2 class="fw-bold mb-4">What is AI and How Does it Use Energy?</h2>
+        <p class="mb-5">Artificial Intelligence (AI) refers to computer systems that perform tasks requiring complex human intelligence such as understanding languages, image creation or processing, and making decisions. Larger AI models like ChatGPT and Gemini rely on energy-intensive processes during their initial training and continued, daily use, which involve running computations on GPU or TPU hardware. This process consumes large amounts of electricity, which are often sourced from carbon-emitting power grids. AI’s environmental impact is increasingly growing and remains an increasingly important point of concern.</p>
+
 
         <p</p>
         <p class="mb-5">ChatGPT uses about 3Wh of energy per query which is equivalent to:</p>
@@ -186,7 +188,8 @@
                 <img src="anthropic_logo.png" alt="Anthropic Logo" class="card-logo">
                 <h5 class="card-title">GPT-4o</h5>
                 <h6 class="card-title">Open AI</h6>
-                <p class="card-text">Explore the steps from user query to power consumption.</p>
+                <p class="card-text">~100M Queries/day</p>
+                <p class="card-text">~400 Training Energy MWh</p>
               </div>
             </div>
           </div>
@@ -196,7 +199,8 @@
                 <img src="gemini_logo.png" alt="Google Logo" class="card-logo">
                 <h5 class="card-title">Gemini</h5>
                 <h6 class="card-title">Google</h6>
-                <p class="card-text">See how model scale correlates with electricity needs.</p>
+                <p class="card-text">~75M Queries/day</p>
+                <p class="card-text">~500 Training Energy MWh</p>              
               </div>
             </div>
           </div>
@@ -206,7 +210,8 @@
                 <img src="meta_logo.png" alt="Meta Logo" class="card-logo">
                 <h5 class="card-title">LLama</h5>
                 <h6 class="card-title">Meta</h6>
-                <p class="card-text">Examine the server & datacenter resources used.</p>
+                <p class="card-text">~7.5M Queries/day</p>
+                <p class="card-text">~375 Training Energy MWh</p>              
               </div>
             </div>
           </div>
@@ -216,7 +221,8 @@
                 <img src="claude_logo.png" alt="Anthropic Logo" class="card-logo">
                 <h5 class="card-title">Claude</h5>
                 <h6 class="card-title">Anthropic</h6>
-                <p class="card-text">Measure environmental impact and emissions.</p>
+                <p class="card-text">~17.5M Queries/day</p>
+                <p class="card-text">~350 Training Energy MWh</p>
               </div>
             </div>
           </div>
@@ -231,7 +237,8 @@
                 <img src="r1_logo.png" alt="Anthropic Logo" class="card-logo">
                 <h5 class="card-title">R1</h5>
                 <h6 class="card-title">DeepSeek</h6>
-                <p class="card-text">Explore the steps from user query to power consumption.</p>
+                <p class="card-text">~500M Queries/day</p>
+                <p class="card-text">Unknown Training Energy MWh</p>
               </div>
             </div>
           </div>
@@ -241,7 +248,8 @@
                 <img src="nova_logo.png" alt="Mistral Logo" class="card-logo">
                 <h5 class="card-title">Nova</h5>
                 <h6 class="card-title">Amazon</h6>
-                <p class="card-text">See how model scale correlates with electricity needs.</p>
+                <p class="card-text">~7.5M Queries/day</p>
+                <p class="card-text">Unknown Training Energy MWh</p>
               </div>
             </div>
           </div>
@@ -251,7 +259,8 @@
                 <img src="mistral_logo.png" alt="Mistral Logo" class="card-logo">
                 <h5 class="card-title">Large 2</h5>
                 <h6 class="card-title">Mistral AI</h6>
-                <p class="card-text">Examine the server & datacenter resources used.</p>
+                <p class="card-text">Unknown Queries/day</p>
+                <p class="card-text">Unknown Training Energy MWh</p>
               </div>
             </div>
           </div>
@@ -261,7 +270,8 @@
                 <img src="bloom_logo.png" alt="Big Science Logo" class="card-logo">
                 <h5 class="card-title">Bloom</h5>
                 <h6 class="card-title">Big Science</h6>
-                <p class="card-text">Measure environmental impact and emissions.</p>
+                <p class="card-text">~1M Queries/day</p>
+                <p class="card-text">~433 Training Energy MWh</p>
               </div>
             </div>
           </div>
@@ -269,15 +279,31 @@
       </div>
       <p></p>
       <p></p>
-      <iframe width="100%" height="684" frameborder="0"
-        src="https://observablehq.com/embed/53a81e62cf881b43@146?cells=ai_models"></iframe>    
-</div>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Title Text Box -->
+          <div class="col-md-4">
+            <div class="p-3 bg-light rounded shadow-sm">
+              <h3 class="fw-bold">Companies and Their Models</h3>
+              <p class="mb-0">Explore the various companies with multiple LLMs</p>
+            </div>
+          </div>
+      
+          <!-- Iframe -->
+          <div class="col-md-8">
+            <iframe width="100%" height="684" frameborder="0"
+              src="https://observablehq.com/embed/53a81e62cf881b43@146?cells=ai_models"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Section 4: Model Energy Use -->
   <section id="model-energy" class="py-5 bg-white text-center">
     <div class="container">
       <h2 class="fw-bold">How Much Energy Do These Models Consume?</h2>
+      <p class="mb-5">When looking at the energy usage from AI models and digital platforms, Google Search remains the highest energy-consuming method with an estimated 24 million MWh consumed annually. The next non-Google platform, ChatGPT-3’s model consumes 1,287 MWh shows that within a year Google Search consumes roughly 18,650x more energy output than GPT-3.</p>
       <p></p>
       <tableau-viz id="tableauViz"       
         src="https://public.tableau.com/views/FinalDataSetAIModels4/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
@@ -286,12 +312,33 @@
     </div>
   </section>
 
+<!-- Section 4b: CO2 -->
+<section id="co2-emissions" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold">Company Contributions to CO2 Emissions</h2>
+    <p class="mb-5">This visualization looks into estimated CO2 emissions associated with different AI companies based on the energy usage of their deployed AI LLM models. Google leads with a significant margin, due to the scale of Google Search and projections of AI-Overview usage. Major contributors include Meta, OpenAI, and DeepMind. However, open-source, research-focused organizations like BigScience, Hugging Face, and Aleph Alpha show significantly lower emission footprints.</p>
+    
+    <!-- Tableau Visualization Wrapper -->
+    <div class="tableau-wrapper">
+      <tableau-viz id="tableauViz88"       
+        src="https://public.tableau.com/views/FinalDataSetAIModels1-C02/Sheet2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+        style="width: 100%; height: 600px;">
+      </tableau-viz>
+    </div>
+  </div>
+</section>
+
   <!-- Section 5: Energy Timeline -->
   <section id="timeline" class="py-5 bg-light text-center">
     <div class="container">
-      <h2 class="fw-bold">Timeline of Energy Consumption</h2>
-      <div class="viz-placeholder">[Tableau Visualization #9: 2024 Energy Timeline]</div>
-      <div class="viz-placeholder">[Tableau Visualization #10: Highest AI in Energy Overtime]</div>
+      <h2 class="fw-bold">When did these AI models come to be?</h2>
+      <p class="mb-5">The timeline of AI deployments shows a steady increase in LLMs from 2020 to 2026. Large tech companies like Google and Meta have been continuing to release iterations of LLM models such as Llama 2 variants (Meta). This timeline highlights both open-source initiatives and proprietary product launches, illustrating the diverse and growing ecosystem of LLM development.</p>
+      <div class="tableau-wrapper">
+        <tableau-viz id="tableauViz"       
+          src="https://public.tableau.com/views/FinalDataSetAIModels1-timeline/Sheet5?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+          style="width: 100%; height: 600px;">
+        </tableau-viz>
+      </div>
     </div>
   </section>
 
