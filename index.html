@@ -80,7 +80,7 @@
     <section id="energy-use" class="py-5 bg-light text-center">
       <div class="container">
         <h2 class="fw-bold mb-4">What is AI and How Does it Use Energy?</h2>
-        <p class="mb-5">As you read above, AI costs a lot—but what do all those MegaWatt Hour (MWh) numbers translate to?</p>
+
         <p</p>
         <p class="mb-5">ChatGPT uses about 3Wh of energy per query which is equivalent to:</p>
 
@@ -128,6 +128,7 @@
   <section id="query-tabs" class="py-5 text-center bg-white">
     <div class="container">
       <h2 class="fw-bold mb-4">How Much Energy Do Different Queries Use?</h2>
+      <p class="mb-5">Different query types vary significantly in energy use depending on their complexity, token length, and compute requirements (e.g., context window size, model architecture, inference depth).</p>
   
       <!-- Tab Buttons -->
       <ul class="nav nav-tabs justify-content-center mb-4" id="queryTab" role="tablist">
@@ -176,7 +177,7 @@
     <div class="container">
       <h2 class="fw-bold">What LLMs Are Out There?</h2>
       <!-- Key Insights Section -->
-      <p>Explore top models from OpenAI, Google, Anthropic, Meta, Mistral, and Cohere—usage stats, queries/day, and total energy use.</p>
+      <p>Explore top models from OpenAI, Google, Anthropic, Meta, and Mistral- usage stats, queries/day, and total energy use</p>
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -277,27 +278,11 @@
   <section id="model-energy" class="py-5 bg-white text-center">
     <div class="container">
       <h2 class="fw-bold">How Much Energy Do These Models Consume?</h2>
-      <div class="viz-wrapper">
-        <tableau-viz id="tableauViz1"       
-          src="https://public.tableau.com/views/247FinalDataSetAIModels/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
-        </tableau-viz>
-      </div>    
-      <div class="viz-wrapper">
-        <tableau-viz id="tableauViz3"       
-          src="https://public.tableau.com/views/FinalDataSetAIModels1-energyuse/Sheet4?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
-        </tableau-viz>
-      </div>
-      <div class="viz-wrapper">
-        <tableau-viz id="tableauViz2"       
-          src="https://public.tableau.com/views/247FinalDataSetAIModels-training/Sheet3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
-        </tableau-viz>
-      </div>      
-      <div class="viz-wrapper">
-        <tableau-viz id="tableauViz2"       
-          src="https://public.tableau.com/views/247FinalDataSetAIModels-CO2/Sheet2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
-        </tableau-viz>
-      </div>
-      <p>Note: The above iframe is a placeholder for the Tableau visualization. Replace the src attribute with the actual Tableau URL.</p>
+      <p></p>
+      <tableau-viz id="tableauViz"       
+        src="https://public.tableau.com/views/FinalDataSetAIModels4/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+        style="width: 100%; height: 1000px;">
+      </tableau-viz>
     </div>
   </section>
 
